@@ -4,12 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 
 class MainActivity : AppCompatActivity() {
     var btnAlertDialog : Button? = null
     var btnActivity : Button? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             AlertDialog.Builder(this)
                 .setTitle("This is Title")
                 .setCancelable(false)
-                .setPositiveButton("Close", {_,_->
+                .setPositiveButton("close", {_,_->
                     Toast.makeText(this, "This is invoked from positive button", Toast.LENGTH_SHORT).show()
                 })
                 .setNegativeButton("Negative", {_,_->

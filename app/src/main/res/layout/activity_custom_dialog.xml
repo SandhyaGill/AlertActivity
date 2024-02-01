@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/etUpdate"
-        android:hint="Enter"
+        android:hint="Enter something"
         android:textSize="30sp"/>
 
     <Button
